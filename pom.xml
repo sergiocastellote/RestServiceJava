@@ -51,5 +51,11 @@
             <artifactId>jersey-core</artifactId>
             <version>1.19</version>
         </dependency>
+        <dependency>
+    <groupId>com.thetransactioncompany</groupId>
+    <artifactId>cors-filter</artifactId>
+    <version>1.8</version>
+</dependency>
     </dependencies>
+    
 </project>
