@@ -1,0 +1,5 @@
+Problema del allign solucionado con esto: https://gist.github.com/genediazjr/7983609
+Problema del JSON solucionado con http://stackoverflow.com/questions/13108161/a-message-body-writer-for-java-class-not-found
+
+Creado proyecto con tutorial: http://crunchify.com/how-to-build-restful-service-with-java-using-jax-rs-and-jersey/
+Creado servicios del tutorial http://chuwiki.chuidiang.org/index.php?title=Ejemplo_de_servicios_REST_con_JSON_y_contenedor_JEE
