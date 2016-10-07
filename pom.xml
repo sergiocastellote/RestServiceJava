@@ -47,6 +47,11 @@
             <version>1.19</version>
         </dependency>
         <dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>5.1.6</version>
+</dependency>
+        <dependency>
             <groupId>com.sun.jersey</groupId>
             <artifactId>jersey-core</artifactId>
             <version>1.19</version>
@@ -60,6 +65,12 @@
     <groupId>com.sun.jersey</groupId>
     <artifactId>jersey-json</artifactId>
     <version>1.8</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/postgresql/postgresql -->
+<dependency>
+    <groupId>postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <version>9.4.1208-jdbc42-atlassian-hosted</version>
 </dependency>
     </dependencies>
     

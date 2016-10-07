@@ -1,11 +1,11 @@
-package com.res.restjersey;
+package com.apprest.entities;
 
-public class Usuarios {
+public class User {
 
     private String name;
     private String surname;
 
-    public Usuarios(
+    public User(
         String name, String surname) {
         super();
         this.name = name;
