@@ -14,28 +14,22 @@ public class UserDAO implements UserDAOImpl{
 		try
 		{
 		   Class.forName("com.mysql.jdbc.Driver");
-		   Connection conexion = DriverManager.getConnection ("jdbc:mysql://localhost:3306/sys","root", "root");
+		   Connection conexion = DriverManager.getConnection ("jdbc:mysql://localhost:32771/sys","root", "root");
 		   Statement s = conexion.createStatement();
 		   ResultSet rs = s.executeQuery ("select * from users");
 		   while (rs.next()) 
 		   { 
-			   int cols = rs.getMetaData().getColumnCount();
-			   User[] arr = new User[cols];
-			   for(int i=0; i<cols; i++){
-				      arr[i] = (User) rs.getObject(i+1);
-				    }
-				    records.add(arr);
-			  rs.	
-		       
+			   String name = rs.getString(1);
+			   String surname = rs.getString(2);			   	
+			   User arr = new User(name, surname);			   
+			   result.add(arr);			   		       
 		   }
 
 		} catch (Exception e)
 		{
 		   e.printStackTrace();
-		}
-		
+		}		
 		return result;
-		
-		
+			
 	}
 }

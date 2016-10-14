@@ -21,12 +21,8 @@ public class UserController {
     @GET
     @Produces({ MediaType.APPLICATION_JSON })
     public List<User> getData() {
-        List<User> result = new LinkedList<>();        
-//        result.add(new User("Sergio", "Castellote"));
-//        result.add(new User("Pere", "Martinez"));
-        
-        userService.getListUsers();
-        
+        List<User> result = new LinkedList<>();                
+        result = userService.getListUsers();        
         return result;
     }
 
