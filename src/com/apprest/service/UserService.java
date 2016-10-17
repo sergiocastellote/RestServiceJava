@@ -15,4 +15,9 @@ public class UserService implements UserServiceImpl{
 		
 	}
 
+	public void saveUser(User user) {
+		userDao.saveUser(user);
+		
+	}
+
 }

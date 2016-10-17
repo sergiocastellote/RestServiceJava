@@ -7,6 +7,7 @@ import com.apprest.entities.User;
 
 public interface UserDAOImpl {
 	public List<User> listUsers();
+	public void saveUser(User user);
 }
 
 

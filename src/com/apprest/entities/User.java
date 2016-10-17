@@ -1,8 +1,14 @@
 package com.apprest.entities;
 
-public class User {
+import java.io.Serializable;
 
-    private String name;
+public class User implements Serializable {
+
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 5201642759195850890L;
+	private String name;
     private String surname;
 
     public User(
