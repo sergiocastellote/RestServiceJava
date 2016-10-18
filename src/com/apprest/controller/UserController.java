@@ -31,19 +31,6 @@ public class UserController {
         result = userService.getListUsers();        
         return result;
     }
-
-    @GET
-    @Produces({ MediaType.APPLICATION_JSON })
-    @Path("{id}")
-    public String getData(@PathParam("id") String id) {
-        if ("1".equals(id)) {
-            return ("one");
-        }
-        if ("2".equals(id)) {
-            return ("two");
-        }
-        throw new WebApplicationException(404);
-    }
     
     @POST
     @Consumes("application/json")
@@ -55,6 +42,20 @@ public class UserController {
 		return user;
     	
     }
+
+//	  Método para getone	
+//    @GET
+//    @Produces({ MediaType.APPLICATION_JSON })
+//    @Path("{id}")
+//    public String getData(@PathParam("id") String id) {
+//        if ("1".equals(id)) {
+//            return ("one");
+//        }
+//        if ("2".equals(id)) {
+//            return ("two");
+//        }
+//        throw new WebApplicationException(404);
+//    }
 
 
 

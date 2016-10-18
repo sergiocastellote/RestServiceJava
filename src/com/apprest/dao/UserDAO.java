@@ -33,8 +33,7 @@ public class UserDAO implements UserDAOImpl{
 		   e.printStackTrace();
 		}
 		
-		return result;
-			
+		return result;			
 	}
 
 	public void saveUser(User user) {
@@ -48,12 +47,10 @@ public class UserDAO implements UserDAOImpl{
 			   p.setString(2, user.getSurname());		
 			   p.execute();
 			   p.close();
-			   conexion.close();
-			   
-			   
+			   conexion.close();		   
+			  
 		} catch (Exception e) {
 			System.out.println(e);
-			// TODO: handle exception
 		}
 	}
 }
